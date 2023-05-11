@@ -11,20 +11,20 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
-            
+            var rand = new Random();
             string[] array = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z","1","2","3","4","5","6","7","8","9","0","!","&","$","?",".","," };
             Console.Title = "The Matrix";
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             while (true)
             {
                 
-                Thread.Sleep(15);
+                Thread.Sleep(25);
                 for (int i = 0; i < 3000; i++)
                 {
                     int a;
-                    var rand = new Random();
+                    
 
-                    var bytes = new byte[48];
+                    var bytes = new byte[36];
                     rand.NextBytes(bytes);
 
 
